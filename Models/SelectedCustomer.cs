@@ -1,8 +1,13 @@
-﻿namespace Models
+﻿using System.Runtime.Serialization;
+
+namespace Models
 {
+    [DataContract]
     public class SelectedCustomer
     {
-        public string Name { get; set; }
-        public string CustomerNumber { get; set; }
+        [DataMember]
+        public string name { get; set; }
+        [DataMember]
+        public string customerNumber { get; set; }
     }
 }
