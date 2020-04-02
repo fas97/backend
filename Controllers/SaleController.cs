@@ -16,12 +16,10 @@ namespace E37SalesApi.Controllers
     public class SaleController : ControllerBase
     {
         private DataContext _context;
-        private IHttpContextAccessor _httpContextAccessor;
-
-        public SaleController(DataContext context, IHttpContextAccessor httpContextAccessor)
+        
+        public SaleController(DataContext context)
         {
             _context = context;
-            _httpContextAccessor = httpContextAccessor;
         }
 
         // POST: api/Sales/5
